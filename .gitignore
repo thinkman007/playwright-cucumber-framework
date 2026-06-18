@@ -1,10 +1,9 @@
 node_modules/
 playwright-report/
 test-results/
-reports/
 allure-results/
 allure-report/
-
 .env
-
+.vscode/
+.idea/
 *.log
