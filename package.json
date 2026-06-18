@@ -1,0 +1,27 @@
+{
+  "name": "self_playwright_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --format json:reports/cucumber-report.json",
+    "report": "node report.js",
+    "test-report": "npm run test && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.60.0",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.60.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.2.0"
+  }
+ 
+  
+}
+
