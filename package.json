@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --format json:reports/cucumber-report.json",
+    "test:chrome": "cucumber-js --tags \"@testLogin\" --format progress",
+    "test:regression": "cucumber-js --tags '@regression'",
     "report": "node report.js",
     "test-report": "npm run test && npm run report"
   },

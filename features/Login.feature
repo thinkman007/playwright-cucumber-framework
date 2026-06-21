@@ -6,7 +6,7 @@ Feature: Login Functionality
     When User enters valid username and password
     Then User should be logged in successfully
   
-  @testOrder
+   @testLogin
   Scenario: Successful order placement
     Given User navigates to login page
     When User enters valid username and password

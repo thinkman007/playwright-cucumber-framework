@@ -4,7 +4,7 @@ module.exports = {
       "steps/*.js",
       "hooks/*.js"
     ],
-     parallel: 2,
+    parallel: 2,
     format: [
       "progress",
       "json:reports/cucumber-report.json"
