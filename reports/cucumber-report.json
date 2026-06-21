@@ -1,0 +1,168 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-order-placement",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Successful order placement",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1223587900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "steps\\LoginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1694343899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "steps\\LoginSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 209734300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "steps\\LoginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3267215500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user add a product to the cart",
+            "match": {
+              "location": "steps\\AddProductToCart.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3163596300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 307406499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testLogin",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;successful-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1241301999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User navigates to login page",
+            "match": {
+              "location": "steps\\LoginSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 619791500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "steps\\LoginSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562945599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should be logged in successfully",
+            "match": {
+              "location": "steps\\LoginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3215698999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4186266899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testLogin",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "features\\Login.feature"
+  }
+]

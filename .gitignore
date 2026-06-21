@@ -3,7 +3,6 @@ playwright-report/
 test-results/
 allure-results/
 allure-report/
-reports/
 .env
 .vscode/
 .idea/
