@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 Before(async function () {
 
     this.browser = await chromium.launch({
-        headless: True
+        headless: true
     });
 
     this.context = await this.browser.newContext();
@@ -20,17 +20,16 @@ Before(async function () {
 
 After(async function (scenario) {
 
-    if (scenario.result.status === 'FAILED') {
+    if (scenario.result.status === 'FAILED' && this.page) {
 
         const screenshot = await this.page.screenshot({
             path: `reports/screenshots/${Date.now()}.png`
         });
 
-        this.attach(
-            screenshot,
-            'image/png'
-        );
+        this.attach(screenshot, 'image/png');
     }
 
-    await this.browser.close();
+    if (this.browser) {
+        await this.browser.close();
+    }
 });
